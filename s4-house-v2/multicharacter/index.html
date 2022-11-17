@@ -13,7 +13,7 @@
     
     
       
-        <title>How To Add New House - 0RESMON</title>
+        <title>Adapt Multicharacter / Awaiting Scripts - 0RESMON</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-add-new-house" class="md-skip">
+        <a href="#adapt-multicharacter-awaiting-scripts" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How To Add New House
+              Adapt Multicharacter / Awaiting Scripts
             
           </span>
         </div>
@@ -453,14 +453,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -481,21 +479,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../s4-house/addnewhouse/" class="md-nav__link">
         How To Add New House
       </a>
-      
     </li>
   
 
@@ -507,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../errors/" class="md-nav__link">
+      <a href="../../s4-house/errors/" class="md-nav__link">
         Common mistakes
       </a>
     </li>
@@ -521,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../../s4-house/install/" class="md-nav__link">
         How To Install?
       </a>
     </li>
@@ -541,12 +529,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -569,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../s4-house-v2/errors/" class="md-nav__link">
+      <a href="../errors/" class="md-nav__link">
         Mysql error BLOB
       </a>
     </li>
@@ -583,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../s4-house-v2/how-to-install/" class="md-nav__link">
+      <a href="../how-to-install/" class="md-nav__link">
         How To Install?
       </a>
     </li>
@@ -597,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../s4-house-v2/inter/" class="md-nav__link">
+      <a href="../inter/" class="md-nav__link">
         Interiors not loading
       </a>
     </li>
@@ -611,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../s4-house-v2/inventory/" class="md-nav__link">
+      <a href="../inventory/" class="md-nav__link">
         Adapt inventory
       </a>
     </li>
@@ -623,11 +613,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../s4-house-v2/multicharacter/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Adapt Multicharacter / Awaiting Scripts
       </a>
+      
     </li>
   
 
@@ -639,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../s4-house-v2/qr-code/" class="md-nav__link">
+      <a href="../qr-code/" class="md-nav__link">
         Adapt QR Code
       </a>
     </li>
@@ -653,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../s4-house-v2/wardrobe/" class="md-nav__link">
+      <a href="../wardrobe/" class="md-nav__link">
         Adapt wardrobe
       </a>
     </li>
@@ -746,37 +746,15 @@
               
                 
 
-<h1 id="how-to-add-new-house">How To Add New House</h1>
-<p>This is a house template. Using this draft, we will watch a new one with you.</p>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Config.Houses_Template</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span> 
-    <span style="color: #f8f8f2">name</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;House for sale&quot;</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #f8f8f2">price</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #f8f8f2">coords</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>      
-      <span style="color: #f8f8f2">house_in</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">vector3(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">),</span>
-      <span style="color: #f8f8f2">house_out</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">vector3(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">),</span>
-      <span style="color: #f8f8f2">garage_in</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">vector3(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">),</span>
-      <span style="color: #f8f8f2">garage_out</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">vector3(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">),</span>
-      <span style="color: #f8f8f2">stash</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">vector3(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">owner</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #f8f8f2">friends</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>  <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">garage</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{},</span>
-    <span style="color: #f8f8f2">theme</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;modern&quot;</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #f8f8f2">stars</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #f8f8f2">garage_stock</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span>
-    <span style="color: #f8f8f2">extends</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{},</span>
-<span style="color: #f8f8f2">}</span>
+<h1 id="adapt-multicharacter-awaiting-scripts">Adapt Multicharacter / Awaiting Scripts</h1>
+<p>If you get such an error when players enter the game, you should do this! If you don't get such an error, you don't need to do this!</p>
+<p>Error: Players getting stuck on this screen when entering the game</p>
+<p><img alt="Adapt-Multicharacter" src="../assets/kopru.jpg" /></p>
+<p>If you have such a problem, you will need to paste this code to the part where your multi-character script is triggered when the player is fully ready.</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">TriggerServerEvent(</span><span style="color: #e6db74">&#39;s4-house:server:request&#39;</span><span style="color: #f8f8f2">)</span>
 </code></pre></div>
 
-<p><img alt="config" src="../assets/config.png" /></p>
-<p>Copy and paste new house data after "," and after paste dont miss ",".</p>
-<ul>
-<li><strong>name</strong> = You can set whatever you want</li>
-<li><strong>price</strong> = You can set whatever price you want</li>
-<li><strong>house_in</strong> = The coordinate of the front of the door of the house you want.</li>
-<li><strong>garage_in</strong> = The coordinate of the front of the garage door of the house you want.</li>
-</ul>
-<p><strong>Please do not omit commas. In case of comma errors, the script may become inoperable.</strong></p>
+<p><span style="color:white;text-align: center;text-shadow: 0px 0px 4px #bc1111;">Adaptation is not our responsibility.</span></p>
 
               
             </article>
@@ -790,7 +768,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../0r-core/server/xPlayer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: xPlayer" rel="prev">
+        <a href="../inventory/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Adapt inventory" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -799,20 +777,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              xPlayer
+              Adapt inventory
             </div>
           </div>
         </a>
       
       
         
-        <a href="../errors/" class="md-footer__link md-footer__link--next" aria-label="Next: Common mistakes" rel="next">
+        <a href="../qr-code/" class="md-footer__link md-footer__link--next" aria-label="Next: Adapt QR Code" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Common mistakes
+              Adapt QR Code
             </div>
           </div>
           <div class="md-footer__button md-icon">
