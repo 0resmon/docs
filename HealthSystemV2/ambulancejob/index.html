@@ -13,7 +13,7 @@
     
     
       
-        <title>Ox inventory item list - 0RESMON</title>
+        <title>Adapting custom ambulancejob scripts - 0RESMON</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ox-inventory-item-list" class="md-skip">
+        <a href="#adapting-custom-ambulancejob-scripts" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ox inventory item list
+              Adapting custom ambulancejob scripts
             
           </span>
         </div>
@@ -495,11 +495,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ambulancejob/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Adapting custom ambulancejob scripts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Adapting custom ambulancejob scripts
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-enable-revive" class="md-nav__link">
+    Step 1 : enable revive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-adaptation" class="md-nav__link">
+    Step 2 : adaptation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-revive-event-or-export-adaptation" class="md-nav__link">
+    Step 3 : Revive event or export adaptation
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3 : Revive event or export adaptation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -565,21 +633,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ox_inventory/" class="md-nav__link">
         Ox inventory item list
       </a>
-      
     </li>
   
 
@@ -943,6 +1001,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-enable-revive" class="md-nav__link">
+    Step 1 : enable revive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-adaptation" class="md-nav__link">
+    Step 2 : adaptation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-revive-event-or-export-adaptation" class="md-nav__link">
+    Step 3 : Revive event or export adaptation
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3 : Revive event or export adaptation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -954,68 +1054,30 @@
               
                 
 
-<h1 id="ox-inventory-item-list">Ox inventory item list</h1>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code>  <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;forceps&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;forceps&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;gauze&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;gauze&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;iodine&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;iodine&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;bandageg&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;Bandage&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;Stops Bleeding&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;pill&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;pill&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;surgical-gloves&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;surgical gloves&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;surgical-staple&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;surgical staple&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;surgical-tray&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;surgical tray&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;syringe&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;Syringe&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
-    <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;tape&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">label</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;Tape&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">description</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">weight</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #f8f8f2">stack</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
-    <span style="color: #f8f8f2">},</span>
+<h1 id="adapting-custom-ambulancejob-scripts">Adapting custom ambulancejob scripts</h1>
+<p>Since the Revive function does not work on every server, we will show you how to adapt it to your own ambulance job script.</p>
+<h2 id="step-1-enable-revive">Step 1 : enable revive</h2>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Config.EnableRevive</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
 </code></pre></div>
+
+<h2 id="step-2-adaptation">Step 2 : adaptation</h2>
+<p><img alt="Image" src="../assets/2.png" /></p>
+<p>Add a new code snippet to the part you see in the picture, the sample code snippet is as follows:</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code>  <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">resource_name</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&quot;example_ambulancejob&quot;</span> <span style="color: #f92672">and</span> <span style="color: #f8f8f2">GetResourceState(resource_name)</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&quot;started&quot;</span> <span style="color: #66d9ef">then</span>
+        <span style="color: #f8f8f2">n</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
+        <span style="color: #66d9ef">break</span>
+  <span style="color: #66d9ef">end</span>
+</code></pre></div>
+
+<p>Then write the name of your ambulancejob script in the place indicated by the arrow in the picture.</p>
+<h2 id="step-3-revive-event-or-export-adaptation">Step 3 : Revive event or export adaptation</h2>
+<p><img alt="Image" src="../assets/3.png" /></p>
+<p>Then you need to add your revive function, otherwise the revive will fail. </p>
+<p>Write the name of your ambulancejob script in the place indicated by the red arrow.</p>
+<p>Paste your own ambulancejob revive event or export in the green arrow. </p>
+<p>If you don't know this event or export, contact the creator of the script or check the script documentation.</p>
+<h3 id="note">Note</h3>
+<p>If there is a bug in the ambulancejob you are using or a bug in the revive system, the script will automatically disable the revive feature!</p>
 
               
             </article>
@@ -1029,7 +1091,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../optional/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Optional settings" rel="prev">
+        <a href="../HowToInstall/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How To Install" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1038,20 +1100,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Optional settings
+              How To Install
             </div>
           </div>
         </a>
       
       
         
-        <a href="../qb_inventory/" class="md-footer__link md-footer__link--next" aria-label="Next: QB Inventory" rel="next">
+        <a href="../bleeding/" class="md-footer__link md-footer__link--next" aria-label="Next: Bleeding adjustment" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              QB Inventory
+              Bleeding adjustment
             </div>
           </div>
           <div class="md-footer__button md-icon">
