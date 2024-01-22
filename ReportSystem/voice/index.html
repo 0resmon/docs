@@ -13,7 +13,7 @@
     
     
       
-        <title>Common mistakes - 0RESMON</title>
+        <title>Voice Script Adaptation - 0RESMON</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#common-mistakes" class="md-skip">
+        <a href="#voice-script-adaptation" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Common mistakes
+              Voice Script Adaptation
             
           </span>
         </div>
@@ -599,12 +599,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -627,7 +629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ReportSystem/install/" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         How To Install?
       </a>
     </li>
@@ -641,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ReportSystem/perm/" class="md-nav__link">
+      <a href="../perm/" class="md-nav__link">
         Give Permission
       </a>
     </li>
@@ -653,11 +655,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../ReportSystem/voice/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Voice Script Adaptation
       </a>
+      
     </li>
   
 
@@ -675,14 +687,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -705,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../addnewhouse/" class="md-nav__link">
+      <a href="../../s4-house/addnewhouse/" class="md-nav__link">
         How To Add New House
       </a>
     </li>
@@ -717,52 +727,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Common mistakes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../s4-house/errors/" class="md-nav__link">
         Common mistakes
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#awaiting-scripts" class="md-nav__link">
-    Awaiting Scripts
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -774,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../../s4-house/install/" class="md-nav__link">
         How To Install?
       </a>
     </li>
@@ -1002,21 +971,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#awaiting-scripts" class="md-nav__link">
-    Awaiting Scripts
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1028,20 +982,88 @@
               
                 
 
-<h1 id="common-mistakes">Common mistakes</h1>
-<h2 id="awaiting-scripts">Awaiting Scripts</h2>
-<p>This error may occur on servers that use multi-character scripts extensively on existing servers.</p>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Config.IHaveMultiChar</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span>
+<h1 id="voice-script-adaptation">Voice Script Adaptation</h1>
+<p>To provide support, you will need to provide voice communication and to do this you will need to adapt it to your own voice script. We have adapted the pma-voice script inside the script. But if you have a different script, you will need to follow these steps.</p>
+<h1 id="step-1">Step 1</h1>
+<p>Seen on the config.lua file</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Config.CreateCall</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(VoiceCall)</span>
+
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+    <span style="color: #75715e">-- We are not responsible for the audio connections,</span>
+    <span style="color: #75715e">-- you need to adapt it to your own audio, radio scripts,</span>
+    <span style="color: #75715e">-- we only left an example for pma voice.</span>
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+    <span style="color: #f8f8f2">exports[</span><span style="color: #e6db74">&quot;pma-voice&quot;</span><span style="color: #f8f8f2">]:setRadioChannel(VoiceCall.id)</span>
+
+
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">Config.CallFromServerSide</span> <span style="color: #f92672">==</span> <span style="color: #66d9ef">true</span> <span style="color: #66d9ef">then</span> 
+        <span style="color: #f8f8f2">TriggerServerEvent(</span><span style="color: #e6db74">&quot;s4-report:redirectToServer:call&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">VoiceCall)</span>
+    <span style="color: #66d9ef">end</span>
+    <span style="color: #75715e">-- exports.saltychat:SetRadioChannel(1111, true)</span>
+
+    <span style="color: #75715e">-- local playerName = GetPlayerName(PlayerId())</span>
+    <span style="color: #75715e">-- local getPlayerRadioChannel = exports.tokovoip_script:getPlayerData(playerName, &quot;radio:channel&quot;)</span>
+    <span style="color: #75715e">-- exports.tokovoip_script:removePlayerFromRadio(getPlayerRadioChannel)</span>
+    <span style="color: #75715e">-- exports.tokovoip_script:setPlayerData(playerName, &quot;radio:channel&quot;, 1111, true);</span>
+    <span style="color: #75715e">-- exports.tokovoip_script:addPlayerToRadio(1111)</span>
+<span style="color: #66d9ef">end</span>
 </code></pre></div>
 
-<p>Set true this config from config.lua</p>
-<p>if you have multichar script you need to call this script when player is fully loaded</p>
-<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">TriggerServerEvent(</span><span style="color: #e6db74">&#39;s4-house:server:request&#39;</span><span style="color: #f8f8f2">)</span>
+<p>In this section you will need to add your own script's trigger or export!</p>
+<p>If your voice script uses a server side trigger or export, this is the part you need to edit.</p>
+<p>will be the following section in sv_config.lua;</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code> <span style="color: #f8f8f2">ServerCfg.CreateCall</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(VoiceCall)</span>
+
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+    <span style="color: #75715e">-- We are not responsible for the audio connections,</span>
+    <span style="color: #75715e">-- you need to adapt it to your own audio, radio scripts,</span>
+    <span style="color: #75715e">-- we only left an example for pma voice.</span>
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+<span style="color: #66d9ef">end</span>
 </code></pre></div>
 
-<p>This trigger will need triggered!</p>
-<p>If you don't know how to do this, come to our discord and open a ticket!</p>
-<p><a href="https://discord.gg/0resmon">https://discord.gg/0resmon</a></p>
+<p>In this section you will need to add your own script's trigger or export!</p>
+<p>In the same way you need to modify these triggers to leave the searches!</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Config.LeaveCall</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(VoiceCall)</span>
+
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+    <span style="color: #75715e">-- We are not responsible for the audio connections,</span>
+    <span style="color: #75715e">-- you need to adapt it to your own audio, radio scripts,</span>
+    <span style="color: #75715e">-- we only left an example for pma voice.</span>
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+
+    <span style="color: #f8f8f2">nowcalling</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">false</span>
+    <span style="color: #f8f8f2">exports[</span><span style="color: #e6db74">&quot;pma-voice&quot;</span><span style="color: #f8f8f2">]:setRadioChannel(</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
+
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">Config.CallFromServerSide</span> <span style="color: #f92672">==</span> <span style="color: #66d9ef">true</span> <span style="color: #66d9ef">then</span> 
+        <span style="color: #f8f8f2">TriggerServerEvent(</span><span style="color: #e6db74">&quot;s4-report:redirectToServer:leave&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">VoiceCall)</span>
+    <span style="color: #66d9ef">end</span>
+    <span style="color: #75715e">-- exports.saltychat:SetRadioChannel(&#39;&#39;, true)</span>
+
+    <span style="color: #75715e">-- local playerName = GetPlayerName(PlayerId())</span>
+    <span style="color: #75715e">-- local getPlayerRadioChannel = exports.tokovoip_script:getPlayerData(playerName, &quot;radio:channel&quot;)</span>
+
+    <span style="color: #75715e">-- exports.tokovoip_script:removePlayerFromRadio(getPlayerRadioChannel)</span>
+    <span style="color: #75715e">-- exports.tokovoip_script:setPlayerData(playerName, &quot;radio:channel&quot;, &quot;nil&quot;, true)</span>
+<span style="color: #66d9ef">end</span>
+</code></pre></div>
+
+<p>In this section you will need to add your own script's trigger or export!</p>
+<p>If your voice script uses a server side trigger or export, this is the part you need to edit.</p>
+<p>will be the following section in sv_config.lua;</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code> <span style="color: #f8f8f2">ServerCfg.CreateCall</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(VoiceCall)</span>
+
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+    <span style="color: #75715e">-- We are not responsible for the audio connections,</span>
+    <span style="color: #75715e">-- you need to adapt it to your own audio, radio scripts,</span>
+    <span style="color: #75715e">-- we only left an example for pma voice.</span>
+    <span style="color: #75715e">-- !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!! !!!! IMPORTANT !!!</span>
+<span style="color: #66d9ef">end</span>
+</code></pre></div>
+
+<p>Note if your voice script is server side, change this variable in config lua to <code>true</code>.</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%;"><span></span><code><span style="color: #f8f8f2">Config.CallFromServerSide</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">false</span>
+</code></pre></div>
 
               
             </article>
@@ -1055,7 +1077,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../addnewhouse/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How To Add New House" rel="prev">
+        <a href="../perm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Give Permission" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1064,20 +1086,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              How To Add New House
+              Give Permission
             </div>
           </div>
         </a>
       
       
         
-        <a href="../install/" class="md-footer__link md-footer__link--next" aria-label="Next: How To Install?" rel="next">
+        <a href="../../s4-house/addnewhouse/" class="md-footer__link md-footer__link--next" aria-label="Next: How To Add New House" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              How To Install?
+              How To Add New House
             </div>
           </div>
           <div class="md-footer__button md-icon">
